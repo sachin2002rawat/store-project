@@ -28,3 +28,19 @@ You'll need to create an initial admin user directly in the database:
 ### Using psql command line
 
 psql "your-neon-connection-string" -c "INSERT INTO users (name, email, password_hash, address, role) VALUES ('System Administrator Account', 'admin@storerating.com', '\$2a\$12\$LQv3c1yqBwEHFl7fj5ZcFuqUHf9mF8kFk3QY8/Z1YjGqN1pQ9vKPG', '123 Admin Street, Admin City, AC 12345', 'admin');"
+
+
+store-rating-platform/
+├── backend/         # Node.js + Express/NestJS API
+│   ├── models/      # Database models
+│   ├── routes/      # API routes
+│   └── controllers/ # Business logic
+├── frontend/        # React.js frontend
+│   ├── src/
+│   ├── components/
+│   └── pages/
+├── .env             # Environment variables
+├── package.json
+└── README.md
+
+
